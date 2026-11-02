@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { config } from "./config";
 
-// ─── Personal Info (sourced from central config) ────────────────────────────
+// ─── Personal Info (sourced from central config) 
 export const PERSONAL_INFO = {
   name: config.personal.name,
   title: config.personal.title,
@@ -21,10 +21,10 @@ export const PERSONAL_INFO = {
   profileImage: config.personal.profileImage,
 } as const;
 
-// ─── Typing Animation Strings ───────────────────────────────────────────────
+// ─── Typing Animation Strings 
 export const TYPING_STRINGS = [...config.typingStrings];
 
-// ─── Statistics ──────────────────────────────────────────────────────────────
+// ─── Statistics 
 export const STATS = [
   { label: "Internship", value: "1+", suffix: "Experience" },
   { label: "Certifications", value: "8+", suffix: "" },
@@ -32,7 +32,7 @@ export const STATS = [
   { label: "Build Projects", value: "9+", suffix: "" },
 ] as const;
 
-// ─── Skills ──────────────────────────────────────────────────────────────────
+// ─── Skills 
 export interface SkillCategory {
   title: string;
   icon: LucideIcon;
@@ -97,7 +97,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
 ];
 
-// ─── Experience ──────────────────────────────────────────────────────────────
+// ─── Experience 
 export interface Experience {
   title: string;
   company: string;
@@ -124,7 +124,7 @@ export const EXPERIENCES: Experience[] = [
   },
 ];
 
-// ─── Projects ────────────────────────────────────────────────────────────────
+// ─── Projects 
 export interface Project {
   id: string;
   title: string;
@@ -146,7 +146,7 @@ export const PROJECTS: Project[] = [
       "A full-stack restaurant management platform built with the MERN stack.",
     longDescription:
       "Developed a full-stack restaurant management platform using React.js, Node.js, Express.js, and MongoDB. Implemented secure authentication with JWT, OTP verification, and role-based access control. Built features for online ordering, checkout, delivery and pickup, real-time order tracking, menu and inventory management, kitchen operations, invoice generation, and admin analytics. Added customer engagement features such as loyalty points, coupons, offers, reviews, and personalized recommendations to improve the overall user experience.",
-    image: "/projects/chatbot.svg",
+    image: "/projects/dashboard.svg",
     technologies: [
       "React.js",
       "Node.js",
@@ -170,7 +170,7 @@ export const PROJECTS: Project[] = [
       "Web-based platform for managing vehicle servicing, bookings, and customer records.",
     longDescription:
       "Developed a full-featured vehicle service management system that allows users to book services, track service status, and manage vehicle details. Admin features include service scheduling, customer management, and service history tracking. The system focuses on usability, responsiveness, and real-world business workflows.",
-    image: "/projects/sentiment.svg",
+    image: "/projects/dashboard.svg",
     technologies: ["Python", "HTML", "CSS", "JavaScript"],
     category: "Full-Stack",
     githubUrl:
@@ -188,9 +188,9 @@ export const PROJECTS: Project[] = [
     image: "/projects/portfolio.svg",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     category: "Front-end",
-    githubUrl: "",
-    liveUrl: "",
-    featured: false,
+    githubUrl: "https://github.com/kishan90909/Portfolio",
+    liveUrl: "https://kishanportfolios.netlify.app/",
+    featured: true,
   },
   {
     id: "QR-Code",
@@ -198,7 +198,7 @@ export const PROJECTS: Project[] = [
     description: "Simple tool to generate QR codes instantly from user input.",
     longDescription:
       "Created a QR code generator web application that enables users to generate QR codes for text, URLs, and other inputs instantly. Focused on minimal design, fast processing, and ease of use for everyday utility.",
-    image: "/projects/classifier.svg",
+    image: "/projects/portfolio.svg",
     technologies: ["React", "Tailwind CSS", "JavaScript"],
     category: "Back-end",
     githubUrl: "https://github.com/kishan90909/QR-Code-Generator",
@@ -224,7 +224,7 @@ export const PROJECTS: Project[] = [
     title: "weather dashboard",
     description: "A modern weather dashboard built with React that provides real-time weather information",
     longDescription: "A modern weather dashboard built with React that provides real-time weather information, hourly forecasts, and multi-day weather predictions using the Open-Meteo API. Users can search weather conditions by city or use their current location to view detailed weather insights, including temperature, humidity, precipitation, wind speed, and forecast trends through interactive charts.",
-    image: "/projects/portfolio.svg",
+    image: "/projects/dashboard.svg",
     technologies: ["React 19", "Vite", "JavaScript (ES6+)", "Open-Meteo API", "Recharts", "CSS3"],
     category: "Back-end",
     githubUrl: "https://github.com/kishan90909/Weather_APIS",
@@ -269,7 +269,7 @@ export const PROJECTS: Project[] = [
   // },
 ];
 
-// ─── Hackathons ──────────────────────────────────────────────────────────────
+// ─── Hackathons 
 export interface Hackathon {
   title: string;
   date: string;
@@ -309,7 +309,7 @@ export const HACKATHONS: Hackathon[] = [
   },
 ];
 
-// ─── Certifications ──────────────────────────────────────────────────────────
+// ─── Certifications 
 export interface Certification {
   title: string;
   issuer: string;
@@ -377,7 +377,7 @@ export const CERTIFICATIONS: Certification[] = [
   },
 ];
 
-// ─── Achievements ────────────────────────────────────────────────────────────
+// ─── Achievements 
 export interface Achievement {
   title: string;
   description: string;
@@ -411,7 +411,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
 ];
 
-// ─── Navigation ──────────────────────────────────────────────────────────────
+// ─── Navigation 
 export interface NavItem {
   label: string;
   href: string;
@@ -426,7 +426,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
-// ─── Command Palette ────────────────────────────────────────────────────────
+// ─── Command Palette 
 export interface Command {
   label: string;
   shortcut?: string;

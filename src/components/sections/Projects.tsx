@@ -7,7 +7,8 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import { ExternalLink, X, Code2 } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink, X } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -170,8 +171,14 @@ export function Projects() {
                     }}
                   >
                     {/* Project image */}
-                    <div className="relative flex h-32 items-center justify-center overflow-hidden bg-gradient-to-br from-background to-surface">
-                      <Code2 className="h-10 w-10 text-fg-muted" />
+                    <div className="relative h-40 w-full overflow-hidden bg-gradient-to-br from-background to-surface">
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} project preview`}
+                        width={640}
+                        height={480}
+                        className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+                      />
 
                       {project.featured && (
                         <div className="absolute right-3 top-3 rounded-full bg-accent px-3 py-1 text-xs font-medium text-accent-fg">
@@ -246,8 +253,14 @@ export function Projects() {
                 <X className="h-4 w-4" />
               </button>
 
-              <div className="mb-6 flex h-40 items-center justify-center rounded-xl bg-gradient-to-br from-background to-surface">
-                <Code2 className="h-14 w-14 text-fg-muted" />
+              <div className="relative mb-6 h-48 w-full overflow-hidden rounded-xl bg-gradient-to-br from-background to-surface">
+                <Image
+                  src={selectedProject.image}
+                  alt={`${selectedProject.title} project preview`}
+                  width={960}
+                  height={540}
+                  className="h-full w-full object-cover"
+                />
               </div>
 
               <h3 className="text-2xl font-medium text-foreground">
