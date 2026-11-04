@@ -146,7 +146,7 @@ export const PROJECTS: Project[] = [
       "A full-stack restaurant management platform built with the MERN stack.",
     longDescription:
       "Developed a full-stack restaurant management platform using React.js, Node.js, Express.js, and MongoDB. Implemented secure authentication with JWT, OTP verification, and role-based access control. Built features for online ordering, checkout, delivery and pickup, real-time order tracking, menu and inventory management, kitchen operations, invoice generation, and admin analytics. Added customer engagement features such as loyalty points, coupons, offers, reviews, and personalized recommendations to improve the overall user experience.",
-    image: "/projects/dashboard.svg",
+    image: "/projects/Restaurant.png",
     technologies: [
       "React.js",
       "Node.js",
@@ -170,7 +170,7 @@ export const PROJECTS: Project[] = [
       "Web-based platform for managing vehicle servicing, bookings, and customer records.",
     longDescription:
       "Developed a full-featured vehicle service management system that allows users to book services, track service status, and manage vehicle details. Admin features include service scheduling, customer management, and service history tracking. The system focuses on usability, responsiveness, and real-world business workflows.",
-    image: "/projects/dashboard.svg",
+    image: "/projects/Vehicle.png",
     technologies: ["Python", "HTML", "CSS", "JavaScript"],
     category: "Full-Stack",
     githubUrl:
@@ -198,7 +198,7 @@ export const PROJECTS: Project[] = [
     description: "Simple tool to generate QR codes instantly from user input.",
     longDescription:
       "Created a QR code generator web application that enables users to generate QR codes for text, URLs, and other inputs instantly. Focused on minimal design, fast processing, and ease of use for everyday utility.",
-    image: "/projects/portfolio.svg",
+    image: "/projects/QRCode.png",
     technologies: ["React", "Tailwind CSS", "JavaScript"],
     category: "Back-end",
     githubUrl: "https://github.com/kishan90909/QR-Code-Generator",
@@ -212,7 +212,7 @@ export const PROJECTS: Project[] = [
       "Real-time currency converter with accurate exchange rates and simple user interface.",
     longDescription:
       "Developed a currency converter web application that allows users to convert values between multiple international currencies in real time. The application integrates API-based exchange rates and provides a fast, responsive interface for smooth user experience.",
-    image: "/projects/portfolio.svg",
+    image: "/projects/CurrencyConverter.png",
     technologies: ["React", "Tailwind CSS", "JavaScript", "API"],
     category: "Back-end",
     githubUrl: "https://github.com/kishan90909/Currency_Converter",
@@ -224,7 +224,7 @@ export const PROJECTS: Project[] = [
     title: "weather dashboard",
     description: "A modern weather dashboard built with React that provides real-time weather information",
     longDescription: "A modern weather dashboard built with React that provides real-time weather information, hourly forecasts, and multi-day weather predictions using the Open-Meteo API. Users can search weather conditions by city or use their current location to view detailed weather insights, including temperature, humidity, precipitation, wind speed, and forecast trends through interactive charts.",
-    image: "/projects/dashboard.svg",
+    image: "/projects/Weather.png",
     technologies: ["React 19", "Vite", "JavaScript (ES6+)", "Open-Meteo API", "Recharts", "CSS3"],
     category: "Back-end",
     githubUrl: "https://github.com/kishan90909/Weather_APIS",
@@ -236,7 +236,7 @@ export const PROJECTS: Project[] = [
     title: "Jewelry E-Commerce",
     description: "Jewlo is a modern jewelry e-commerce landing page inspired by premium Shopify jewelry stores.",
     longDescription: "The project focuses on elegant UI design, responsive layouts, product showcases, category sections, promotional banners, and shopping cart interactions. Built with HTML, CSS, and JavaScript, the website delivers a clean shopping experience with a luxury brand aesthetic.",
-    image: "/projects/portfolio.svg",
+    image: "/projects/Jewelry.png",
     technologies: ["HTML5", "CSS", "JavaScript"],
     category: "Front-end",
     githubUrl: "https://github.com/kishan90909/jewlo_Project",
@@ -248,7 +248,7 @@ export const PROJECTS: Project[] = [
     title: "Modern Shoe E-Commerce Store",
     description: "SHOOZ is a modern React-based e-commerce application designed for showcasing and selling footwear products.",
     longDescription: "The application provides a smooth shopping experience with  features such as: Product browsing, Cart management, Wishlist functionality, Category filtering, LocalStorage persistence, Responsive user interface. Built using React 19, React Router, and Vite, the project demonstrates modern frontend development practices including reusable components, state management with hooks, and dynamic UI rendering.",
-    image: "/projects/portfolio.svg",
+    image: "/projects/Shoe.png",
     technologies: ["React", "Vite", "React Router DOM", "JavaScript ES6+", "CSS3","LocalStorage API", "Remix Icons"],
     category: "Front-end",
     githubUrl: "https://github.com/kishan90909/SHOOZ",
