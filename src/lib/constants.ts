@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import { config } from "./config";
 
-// ─── Personal Info (sourced from central config) 
+// ─── Personal Info (sourced from central config)
 export const PERSONAL_INFO = {
   name: config.personal.name,
   title: config.personal.title,
@@ -21,10 +21,10 @@ export const PERSONAL_INFO = {
   profileImage: config.personal.profileImage,
 } as const;
 
-// ─── Typing Animation Strings 
+// ─── Typing Animation Strings
 export const TYPING_STRINGS = [...config.typingStrings];
 
-// ─── Statistics 
+// ─── Statistics
 export const STATS = [
   { label: "Internship", value: "1+", suffix: "Experience" },
   { label: "Certifications", value: "8+", suffix: "" },
@@ -32,7 +32,7 @@ export const STATS = [
   { label: "Build Projects", value: "9+", suffix: "" },
 ] as const;
 
-// ─── Skills 
+// ─── Skills
 export interface SkillCategory {
   title: string;
   icon: LucideIcon;
@@ -97,7 +97,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
 ];
 
-// ─── Experience 
+// ─── Experience
 export interface Experience {
   title: string;
   company: string;
@@ -124,7 +124,7 @@ export const EXPERIENCES: Experience[] = [
   },
 ];
 
-// ─── Projects 
+// ─── Projects
 export interface Project {
   id: string;
   title: string;
@@ -140,8 +140,22 @@ export interface Project {
 
 export const PROJECTS: Project[] = [
   {
+    id: "WorkFlow",
+    title: "Project Management platform",
+    description:
+      "A full-stack Project management platform built with the MERN stack.",
+    longDescription:
+      "Engineered a scalable full-stack project management platform with a centralized dashboard to manage projects, track task progress, coordinate teams, and monitor overall project performance. Implemented role-based workflows for Admin, Project Manager, and Team Member roles, covering user administration, team assignments, project planning, and task management. Integrated interactive Kanban boards with drag-and-drop, Socket.IO notifications, workload monitoring, risk analysis, project analytics, and audit logging. Addressed challenges such as fragmented project tracking, communication delays, missed deadlines, and uneven workload distribution through centralized task management and real-time monitoring.",
+    image: "/projects/WorkFlow.png",
+    technologies: ["React.js", "JavaScript", "Node.js", "Express.js", "MongoDB", "REST APIs", "Socket.IO"],
+    category: "Full-Stack",
+    githubUrl: "https://github.com/kishan90909/WorkFlow---Project_Management_Platform",
+    liveUrl: "https://workflowpro1.netlify.app",
+    featured: true,
+  },
+  {
     id: "RDX-Fast-Food",
-    title: "Restaurant-Management-platform",
+    title: "Restaurant Management platform",
     description:
       "A full-stack restaurant management platform built with the MERN stack.",
     longDescription:
@@ -222,10 +236,19 @@ export const PROJECTS: Project[] = [
   {
     id: "weather dashboard",
     title: "weather dashboard",
-    description: "A modern weather dashboard built with React that provides real-time weather information",
-    longDescription: "A modern weather dashboard built with React that provides real-time weather information, hourly forecasts, and multi-day weather predictions using the Open-Meteo API. Users can search weather conditions by city or use their current location to view detailed weather insights, including temperature, humidity, precipitation, wind speed, and forecast trends through interactive charts.",
+    description:
+      "A modern weather dashboard built with React that provides real-time weather information",
+    longDescription:
+      "A modern weather dashboard built with React that provides real-time weather information, hourly forecasts, and multi-day weather predictions using the Open-Meteo API. Users can search weather conditions by city or use their current location to view detailed weather insights, including temperature, humidity, precipitation, wind speed, and forecast trends through interactive charts.",
     image: "/projects/Weather.png",
-    technologies: ["React 19", "Vite", "JavaScript (ES6+)", "Open-Meteo API", "Recharts", "CSS3"],
+    technologies: [
+      "React 19",
+      "Vite",
+      "JavaScript (ES6+)",
+      "Open-Meteo API",
+      "Recharts",
+      "CSS3",
+    ],
     category: "Back-end",
     githubUrl: "https://github.com/kishan90909/Weather_APIS",
     liveUrl: "https://weather-kishan001.netlify.app/",
@@ -234,8 +257,10 @@ export const PROJECTS: Project[] = [
   {
     id: "Jewlo",
     title: "Jewelry E-Commerce",
-    description: "Jewlo is a modern jewelry e-commerce landing page inspired by premium Shopify jewelry stores.",
-    longDescription: "The project focuses on elegant UI design, responsive layouts, product showcases, category sections, promotional banners, and shopping cart interactions. Built with HTML, CSS, and JavaScript, the website delivers a clean shopping experience with a luxury brand aesthetic.",
+    description:
+      "Jewlo is a modern jewelry e-commerce landing page inspired by premium Shopify jewelry stores.",
+    longDescription:
+      "The project focuses on elegant UI design, responsive layouts, product showcases, category sections, promotional banners, and shopping cart interactions. Built with HTML, CSS, and JavaScript, the website delivers a clean shopping experience with a luxury brand aesthetic.",
     image: "/projects/Jewelry.png",
     technologies: ["HTML5", "CSS", "JavaScript"],
     category: "Front-end",
@@ -246,10 +271,20 @@ export const PROJECTS: Project[] = [
   {
     id: "SHOOZ",
     title: "Modern Shoe E-Commerce Store",
-    description: "SHOOZ is a modern React-based e-commerce application designed for showcasing and selling footwear products.",
-    longDescription: "The application provides a smooth shopping experience with  features such as: Product browsing, Cart management, Wishlist functionality, Category filtering, LocalStorage persistence, Responsive user interface. Built using React 19, React Router, and Vite, the project demonstrates modern frontend development practices including reusable components, state management with hooks, and dynamic UI rendering.",
+    description:
+      "SHOOZ is a modern React-based e-commerce application designed for showcasing and selling footwear products.",
+    longDescription:
+      "The application provides a smooth shopping experience with  features such as: Product browsing, Cart management, Wishlist functionality, Category filtering, LocalStorage persistence, Responsive user interface. Built using React 19, React Router, and Vite, the project demonstrates modern frontend development practices including reusable components, state management with hooks, and dynamic UI rendering.",
     image: "/projects/Shoe.png",
-    technologies: ["React", "Vite", "React Router DOM", "JavaScript ES6+", "CSS3","LocalStorage API", "Remix Icons"],
+    technologies: [
+      "React",
+      "Vite",
+      "React Router DOM",
+      "JavaScript ES6+",
+      "CSS3",
+      "LocalStorage API",
+      "Remix Icons",
+    ],
     category: "Front-end",
     githubUrl: "https://github.com/kishan90909/SHOOZ",
     liveUrl: "https://shooz-kishan001.netlify.app/",
@@ -269,7 +304,7 @@ export const PROJECTS: Project[] = [
   // },
 ];
 
-// ─── Hackathons 
+// ─── Hackathons
 export interface Hackathon {
   title: string;
   date: string;
@@ -309,7 +344,7 @@ export const HACKATHONS: Hackathon[] = [
   },
 ];
 
-// ─── Certifications 
+// ─── Certifications
 export interface Certification {
   title: string;
   issuer: string;
@@ -377,7 +412,7 @@ export const CERTIFICATIONS: Certification[] = [
   },
 ];
 
-// ─── Achievements 
+// ─── Achievements
 export interface Achievement {
   title: string;
   description: string;
@@ -411,7 +446,7 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
 ];
 
-// ─── Navigation 
+// ─── Navigation
 export interface NavItem {
   label: string;
   href: string;
@@ -426,7 +461,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Contact", href: "#contact" },
 ];
 
-// ─── Command Palette 
+// ─── Command Palette
 export interface Command {
   label: string;
   shortcut?: string;
