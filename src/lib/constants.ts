@@ -147,9 +147,18 @@ export const PROJECTS: Project[] = [
     longDescription:
       "Engineered a scalable full-stack project management platform with a centralized dashboard to manage projects, track task progress, coordinate teams, and monitor overall project performance. Implemented role-based workflows for Admin, Project Manager, and Team Member roles, covering user administration, team assignments, project planning, and task management. Integrated interactive Kanban boards with drag-and-drop, Socket.IO notifications, workload monitoring, risk analysis, project analytics, and audit logging. Addressed challenges such as fragmented project tracking, communication delays, missed deadlines, and uneven workload distribution through centralized task management and real-time monitoring.",
     image: "/projects/WorkFlow.png",
-    technologies: ["React.js", "JavaScript", "Node.js", "Express.js", "MongoDB", "REST APIs", "Socket.IO"],
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Socket.IO",
+    ],
     category: "Full-Stack",
-    githubUrl: "https://github.com/kishan90909/WorkFlow---Project_Management_Platform",
+    githubUrl:
+      "https://github.com/kishan90909/WorkFlow---Project_Management_Platform",
     liveUrl: "https://workflowpro1.netlify.app",
     featured: true,
   },
